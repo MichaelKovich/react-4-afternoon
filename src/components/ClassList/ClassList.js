@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import BackButton from '../BackButton';
 import axios from 'axios';
 
 export default class ClassList extends Component {
@@ -37,6 +38,7 @@ export default class ClassList extends Component {
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {students}
+        <BackButton />
       </div>
     );
   }

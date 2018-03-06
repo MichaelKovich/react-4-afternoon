@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import BackButton from '../BackButton';
 import axios from 'axios';
 
 export default class Student extends Component {
@@ -29,6 +30,7 @@ export default class Student extends Component {
         </h1>
         <h3>Grade: {this.state.studentInfo.grade}</h3>
         <h3>Email: {this.state.studentInfo.email}</h3>
+        <BackButton />
       </div>
     );
   }
